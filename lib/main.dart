@@ -1,6 +1,10 @@
 import 'package:boringshow/problems/cuper_sample.dart';
 import 'package:boringshow/problems/overlay_sample.dart';
+import 'package:boringshow/problems/row_sample.dart';
+import 'package:boringshow/problems/spacer_sample.dart';
 import 'package:boringshow/solutions/cupertino_solution.dart';
+import 'package:boringshow/solutions/row_solution.dart';
+import 'package:boringshow/solutions/spacer_sol.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -26,17 +30,18 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Boring Show"),
       ),
-
       /// [Widget 1]
       // body: fittedSample(),
       /// [Widget 2]
-      // body: rowSampleSol(),
+      // body: rowSample(),
       /// [Widget 3]
       // body: bannerSample(),
       /// [Widget 4]
       // body: overlaySample(context),
       /// [Widget 5]
       // body: CuperSample(),
+      /// [Widget 6]
+      body: spacerSample(),
     );
   }
 }
