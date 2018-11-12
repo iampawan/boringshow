@@ -29,21 +29,23 @@ class CuperSampleSol extends StatelessWidget {
         ),
       );
 
+  Widget pageScaffold() => CupertinoPageScaffold(
+        child: CustomScrollView(
+          slivers: <Widget>[
+            CupertinoSliverNavigationBar(
+              largeTitle: Text("Chats"),
+            ),
+            SliverFillRemaining(
+              child: Center(
+                child: Text("WhatsApp"),
+              ),
+            )
+          ],
+        ),
+      );
+
   @override
   Widget build(BuildContext context) {
-    return CupertinoPageScaffold(
-      child: CustomScrollView(
-        slivers: <Widget>[
-          CupertinoSliverNavigationBar(
-            largeTitle: Text("Chats"),
-          ),
-          SliverFillRemaining(
-            child: Center(
-              child: Text("WhatsApp"),
-            ),
-          )
-        ],
-      ),
-    );
+    return pageScaffold();
   }
 }
