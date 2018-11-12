@@ -1,3 +1,4 @@
+import 'package:boringshow/home_page.dart';
 import 'package:boringshow/problems/cuper_sample.dart';
 import 'package:boringshow/problems/overlay_sample.dart';
 import 'package:boringshow/problems/row_sample.dart';
@@ -23,13 +24,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class HomePage extends StatelessWidget {
+class MenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Boring Show"),
       ),
+
       /// [Widget 1]
       // body: fittedSample(),
       /// [Widget 2]
@@ -41,7 +43,7 @@ class HomePage extends StatelessWidget {
       /// [Widget 5]
       // body: CuperSample(),
       /// [Widget 6]
-      body: spacerSample(),
+      // body: spacerSample(),
     );
   }
 }
